@@ -4,6 +4,8 @@ import { Addcolor } from "./ColorBox";
 import { Counter } from "./Counter";
 import { Msg } from "./Msg";
 import { Welcome } from "./Welcome";
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 
 const Init_Movie_List = [
@@ -91,23 +93,13 @@ export default function App() {
 
       <div className="add-movie">
 
-      <input
-          onChange={(event) => setName(event.target.value)}
-          placeholder="Enter the name"
-        />
-        <input
-          onChange={(event) => setImg(event.target.value)}
-          placeholder="Enter the img url"
-        />
-        <input
-          onChange={(event) => setRating(event.target.value)}
-          placeholder="Enter the rating"
-        />
-        <input
-          onChange={(event) => setSummary(event.target.value)}
-          placeholder="Enter the summary"
-        />
-        <button onClick={()=>{
+      <TextField onChange={(event) => setName(event.target.value)}  label="Enter the name" variant="outlined" />
+      <TextField onChange={(event) => setImg(event.target.value)}  label="Enter the img url" variant="outlined" />
+      <TextField onChange={(event) => setRating(event.target.value)}  label="Enter the rating" variant="outlined" />
+      <TextField onChange={(event) => setSummary(event.target.value)}  label="Enter the summary" variant="outlined" />
+
+        <Button className ="add-movie" variant="outlined" 
+        onClick={()=>{
           const newMovieList = {
 
             name: name,
@@ -119,7 +111,7 @@ export default function App() {
 
           setMovieList([...movieList, newMovieList])
 
-        }}>Add Movie</button>
+        }}>Add Movie</Button>
       </div>
       
 

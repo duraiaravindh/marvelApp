@@ -18,7 +18,7 @@ h1 {
 
 }
 body {
-  background-color: black;
+  background-color: #2E4A62;
   padding: 30px;
   margin: 20px;
 }
@@ -96,7 +96,7 @@ padding: 10px;
   flex-wrap: nowrap;
 }
 .btn-style{
-  background-color: black;
+  background-color: #2E4A62;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -120,7 +120,7 @@ padding: 10px;
 
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   margin-bottom: 20px;
 
 }
